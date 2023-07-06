@@ -1,5 +1,4 @@
 from prompt import string
-from random import randint
 
 
 def start_the_game(game):
