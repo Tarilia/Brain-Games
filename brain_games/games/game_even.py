@@ -2,7 +2,8 @@ from random import randint
 
 
 def ask_a_question():
-    condition_game = 'Answer "yes" if number is even otherwise answer "no".'
+    condition_game = 'Answer "yes" if the number is even,'\
+                     ' otherwise answer "no".'
     return condition_game
 
 
