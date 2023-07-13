@@ -13,17 +13,17 @@
 
 ### Demonstration:
 
-## brain-even:
+#### brain-even:
 https://asciinema.org/a/1CAZ75OU3pkxIZYoEKdpBTtZ1
 
-## brain-calc:
+#### brain-calc:
 https://asciinema.org/a/PtS9Ka3xDfHpi56FVKGIVfDTZ
 
-## brain-gcd:
+#### brain-gcd:
 https://asciinema.org/a/9wOLiDpDDidozYoSuxUGlHigp
 
-## brain-progression:
+#### brain-progression:
 https://asciinema.org/a/5QqSp8PXQMHtn1ydqYbTl1LtS
 
-## brain-prime:
+#### brain-prime:
 https://asciinema.org/a/KBX7s1WdRVsNcgA2WgPrxXuY3
