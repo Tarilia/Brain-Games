@@ -14,7 +14,7 @@ def create_a_game():
     first_number = randint(start_number, finish_number)
     second_number = randint(start_number, finish_number)
     operator = choice(symbols)
-    question = f' {first_number} {operator} {second_number}'
+    question = f'{first_number} {operator} {second_number}'
     if operator == '+':
         correct_answer = str(first_number + second_number)
     elif operator == '-':
