@@ -26,4 +26,4 @@ https://asciinema.org/a/9wOLiDpDDidozYoSuxUGlHigp
 https://asciinema.org/a/5QqSp8PXQMHtn1ydqYbTl1LtS
 
 #### brain-prime:
-https://asciinema.org/a/KBX7s1WdRVsNcgA2WgPrxXuY3
+<a href="https://asciinema.org/a/KBX7s1WdRVsNcgA2WgPrxXuY3"><img src="https://asciinema.org/a/KBX7s1WdRVsNcgA2WgPrxXuY3.png" width="836"/></a>
