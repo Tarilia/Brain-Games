@@ -1,8 +1,7 @@
 from random import randint
 
 
-GAME_RULES = 'Answer "yes" if the number is even,'\
-                     ' otherwise answer "no".'
+GAME_RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 START_NUMBER = 1
 FINISH_NUMBER = 100
 
