@@ -1,20 +1,36 @@
 from random import randint
 
 
-def ask_a_question():
-    condition_games = 'What number is missing in the progression?'
-    return condition_games
+GAME_RULES = 'What number is missing in the progression?'
+START_INITIAL_NUM = 1
+FINISH_INITIAL_NUM = 10
+START_LAST_NUM = 35
+FINISH_LAST_NUM = 40
+START_DIFFERENCE_NUM = 2
+FINISH_DIFFERENCE_NUM = 5
+START_RANDOM_NUM = 0
 
 
-def create_a_game():
-    start_number = randint(1, 10)
-    finish_number = randint(35, 40)
-    progression_step = randint(2, 5)
-    arithmetic_progression = []
-    for i in range(start_number, finish_number, progression_step):
-        arithmetic_progression.append(i)
-    random_element = randint(0, len(arithmetic_progression) - 1)
-    correct_answer = str(arithmetic_progression[random_element])
-    arithmetic_progression[random_element] = '..'
-    question = ' '.join(map(str, arithmetic_progression))
+def calculate_progression(initial_term, last_term, difference):
+    progression = []
+    for i in range(initial_term, last_term, difference):
+        progression.append(i)
+    return progression
+
+
+def constructing_question_string(progression, random_element):
+    question_string = list(progression)
+    question_string[random_element] = '..'
+    question_string = ' '.join(map(str, question_string))
+    return question_string
+
+
+def get_question_and_correct_answer():
+    initial_term = randint(START_INITIAL_NUM, FINISH_INITIAL_NUM)
+    last_term = randint(START_LAST_NUM, FINISH_LAST_NUM)
+    difference = randint(START_DIFFERENCE_NUM, FINISH_DIFFERENCE_NUM)
+    progression = calculate_progression(initial_term, last_term, difference)
+    random_element = randint(START_RANDOM_NUM, len(progression) - 1)
+    question = constructing_question_string(progression, random_element)
+    correct_answer = str(progression[random_element])
     return question, correct_answer

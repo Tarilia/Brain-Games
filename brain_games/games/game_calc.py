@@ -2,18 +2,16 @@ from random import randint
 from random import choice
 
 
-def ask_a_question():
-    condition_game = 'What is the result of the expression?'
-    return condition_game
+GAME_RULES = 'What is the result of the expression?'
+START_NUMBERS = 1
+FINISH_NUMBERS = 100
+SIMBOLS = ["+", "-", "*"]
 
 
-def create_a_game():
-    start_number = 1
-    finish_number = 100
-    symbols = ["+", "-", "*"]
-    first_number = randint(start_number, finish_number)
-    second_number = randint(start_number, finish_number)
-    operator = choice(symbols)
+def get_question_and_correct_answer():
+    first_number = randint(START_NUMBERS, FINISH_NUMBERS)
+    second_number = randint(START_NUMBERS, FINISH_NUMBERS)
+    operator = choice(SIMBOLS)
     question = f'{first_number} {operator} {second_number}'
     if operator == '+':
         correct_answer = str(first_number + second_number)

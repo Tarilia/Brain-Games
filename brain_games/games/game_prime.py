@@ -1,10 +1,10 @@
 from random import randint
 
 
-def ask_a_question():
-    condition_games = 'Answer "yes" if given number is prime. ' \
+GAME_RULES = 'Answer "yes" if given number is prime. ' \
                       'Otherwise answer "no".'
-    return condition_games
+START_NUMBER = 0
+FINISH_NUMBER = 100
 
 
 def is_prime(question):
@@ -17,10 +17,8 @@ def is_prime(question):
         return True
 
 
-def create_a_game():
-    start_number = 0
-    finish_number = 100
-    question = randint(start_number, finish_number)
+def get_question_and_correct_answer():
+    question = randint(START_NUMBER, FINISH_NUMBER)
     if is_prime(question):
         correct_answer = 'yes'
     else:

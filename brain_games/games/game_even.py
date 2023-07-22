@@ -1,18 +1,20 @@
 from random import randint
 
 
-def ask_a_question():
-    condition_game = 'Answer "yes" if the number is even,'\
+GAME_RULES = 'Answer "yes" if the number is even,'\
                      ' otherwise answer "no".'
-    return condition_game
+START_NUMBER = 1
+FINISH_NUMBER = 100
 
 
-def create_a_game():
-    start_number = 1
-    finish_number = 100
-    question = randint(start_number, finish_number)
-    if question % 2 == 0:
-        correct_answer = 'yes'
+def is_even(number):
+    if number % 2 == 0:
+        return 'yes'
     else:
-        correct_answer = 'no'
+        return 'no'
+
+
+def get_question_and_correct_answer():
+    question = randint(START_NUMBER, FINISH_NUMBER)
+    correct_answer = is_even(question)
     return question, correct_answer
