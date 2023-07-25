@@ -3,14 +3,14 @@ from random import choice
 
 
 GAME_RULES = 'What is the result of the expression?'
-START_NUMBERS = 1
-FINISH_NUMBERS = 100
+MIN_NUMBER = 1
+MAX_NUMBER = 100
 SIMBOLS = ["+", "-", "*"]
 
 
 def get_question_and_correct_answer():
-    first_number = randint(START_NUMBERS, FINISH_NUMBERS)
-    second_number = randint(START_NUMBERS, FINISH_NUMBERS)
+    first_number = randint(MIN_NUMBER, MAX_NUMBER)
+    second_number = randint(MIN_NUMBER, MAX_NUMBER)
     operator = choice(SIMBOLS)
     question = f'{first_number} {operator} {second_number}'
     if operator == '+':
