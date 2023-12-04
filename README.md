@@ -11,7 +11,7 @@ System Linux or console Ubuntu for Windows
 
 ### Installation:
 ```
-1. git clone git@github.com:Tarilia/python-project-49.git
+1. download the project.
 2. make package-install
 3. enter game name
 ```
