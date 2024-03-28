@@ -11,9 +11,12 @@ System Linux or console Ubuntu for Windows
 
 ### Installation:
 ```
-1. download the project.
-2. make package-install
-3. enter game name
+ - download the project.
+ - cd ./python-project-49
+ - make install
+ - make build
+ - make package-install
+ - enter game name
 ```
 
 
